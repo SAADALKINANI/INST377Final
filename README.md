@@ -1,8 +1,11 @@
 # INST377Final
 
 Title: Currency Exchange Tracker
+
+
 Description:
 Currency Exchange Tracker is a full-stack web application that allows users to convert currencies in real time, visualize historical exchange rate trends over custom date ranges, and save frequently used currency pairs as favorites. It is backed by a live external exchange rate API and a Supabase database for persistent storage.
+
 
 Target Browsers: This application is designed for desktop browsers 
 

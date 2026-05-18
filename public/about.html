@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Currency Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+<header>
+  <h1>Currency Exchange Tracker</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="trends.html">Trends</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="card" data-aos="fade-up">
+    <h2>About This Project</h2>
+    <p>
+      Currency Exchange Tracker lets you convert currencies in real time, 
+      explore historical exchange rate trends,
+      and save your most-used currency pairs for quick access.
+    </p>
+  </div>
+
+  <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <h2>Features</h2>
+    <ul>
+      <li>Live currency conversion powered by the Frankfurter API</li>
+      <li>Historical trend charts with Chart.js</li>
+      <li>Save and manage favorite currency pairs via Supabase</li>
+    </ul>
+    <h3> Have it saved for your next overseas trip!</h3>
+  </div>
+
+  
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 600, once: true });
+</script>
+
+</body>
+</html>

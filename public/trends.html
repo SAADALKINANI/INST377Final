@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trends</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Exchange Rate Trends</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="trends.html">Trends</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="card">
+
+    <select id="base">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <select id="target">
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+    </select>
+
+    <input type="date" id="from">
+    <input type="date" id="to">
+
+    <button onclick="loadChart()">Generate Chart</button>
+
+  </div>
+
+  <div class="card">
+    <canvas id="chart"></canvas>
+  </div>
+
+</div>
+
+<script src="trends_script.js"></script>
+
+</body>
+</html>

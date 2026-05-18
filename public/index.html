@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+<header>
+  <h1>Currency Exchange Tracker</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="trends.html">Trends</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="card" data-aos="fade-up">
+
+    <h2>Currency Converter</h2>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <select id="base">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+    </select>
+
+    <select id="target">
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <button onclick="saveFavorite()">Save Favorite Pair</button>
+
+    <div id="result"></div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="idx_script.js"></script>
+
+</body>
+</html>
